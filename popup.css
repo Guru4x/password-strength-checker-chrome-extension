@@ -1,0 +1,72 @@
+/* General Styling */
+li.passed {
+    color: green;
+  }
+  
+  li.failed {
+      color: red;
+  }
+body {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+input.strong {
+  border: 2px solid green;
+  background-color: #e0ffe0;
+}
+
+input.weak {
+  border: 2px solid red;
+  background-color: #ffe0e0;
+}
+
+button {
+  background-color: #00adb5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+body {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+input.strong {
+  border: 2px solid green;
+  background-color: #e0ffe0;
+}
+
+input.weak {
+  border: 2px solid red;
+  background-color: #ffe0e0;
+}
+
+button {
+  background-color: #00adb5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

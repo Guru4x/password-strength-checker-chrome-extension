@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Passphrase Generator and Password Strength Checker",
+    "version": "1.0",
+    "description": "A Chrome extension for generating passphrases and checking password strength.",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {}
+  
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  

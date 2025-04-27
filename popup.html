@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte-N-Crypt Passphrase & Password Manager</title>
+    <script src="popup.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Byte-N-Crypt</h1>
+
+    <!-- Username Input & Passphrase Generation -->
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+    </div>
+    <div>
+        <label for="passphrase">Generated Passphrase:</label>
+        <input type="text" id="passphrase" readonly>
+        <button id="generate">Generate Passphrase</button>
+    </div>
+
+    <!-- Password Strength Checker & Brute-force Time Estimator -->
+    <div>
+        <label for="password">Password:</label>
+        <input type="text" id="password" placeholder="Enter your password">
+        <button id="checkStrength">Check Strength</button>
+        <p id="strengthResult"></p>
+        <p id="bruteForceTimeResult"></p>
+    </div>
+
+    <div id="passwordConditions">
+
+        <ul id="passwordConditions">
+            <h3>Password Requirements:</h3>
+            <li data-condition="length">At least 6 characters</li>
+            <li data-condition="uppercase">At least one uppercase letter</li>
+            <li data-condition="lowercase">At least one lowercase letter</li>
+            <li data-condition="number">At least one number</li>
+            <li data-condition="special">At least one special character</li>
+        </ul>
+        
+    </div>
+
+    <!-- Brute-force Techniques Selection -->
+    <div>
+        <label for="bruteForceTechnique">Choose Brute-Force Technique:</label>
+        <select id="bruteForceTechnique">
+            <option value="standard">Standard (1 Billion guesses/sec)</option>
+            <option value="atari">Atari (100 Million guesses/sec)</option>
+            <option value="quantum">Quantum (1 Trillion guesses/sec)</option>
+        </select>
+    </div>
+
+    <button id="save">Save Passphrase</button>
+
+    <!-- Saved Passphrases -->
+    <h2>Saved Passphrases</h2>
+    <ul id="savedPassphrasesList"></ul>
+    <button id="delete">Delete Selected Passphrases</button>
+</body>
+</html>
